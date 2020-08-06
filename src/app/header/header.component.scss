@@ -1,0 +1,17 @@
+header{
+  padding-top: 14px;
+  padding-bottom: 30px;
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    p.title{
+      font-family: "Seaweed Script", "serif";
+      font-size: 30px;
+      letter-spacing: 0.51em;
+      color: #FF8A00;
+    }
+    .header__logo{
+      margin-left: 41px;
+    }
+  }
+}

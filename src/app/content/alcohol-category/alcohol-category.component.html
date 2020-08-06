@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <div class="alcohol__category__title">{{ itemCategory.alcoholCategoryTitle }}</div>
+  <div class="line"></div>
+  <ul class="alcohol__category__list">
+    <app-alcohol-category-item
+      *ngFor="let drink of itemCategory.drinks"
+      [drink]="drink"
+    ></app-alcohol-category-item>
+  </ul>
+</div>

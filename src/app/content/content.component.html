@@ -1,0 +1,11 @@
+<div class="wrapper">
+  <!--  <app-alcohol-category [drinks]="drinks" *ngIf="!loading"></app-alcohol-category>-->
+  <div *ngIf="!loading">
+    <app-alcohol-category
+      *ngFor="let category of assortment"
+      [itemCategory]="category"
+    ></app-alcohol-category>
+  </div>
+
+  <div class="loading" *ngIf="loading">Loading...</div>
+</div>

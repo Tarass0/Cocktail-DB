@@ -1,0 +1,15 @@
+<li class="filter__item">
+  <input
+    type="checkbox"
+    [id]="filterItem.strCategory"
+    [name]="filterItem.strCategory"
+    [value]="filterItem.strCategory"
+    #input
+    checked
+    (click)="toggleCheckbox(input)"
+  />
+  <div class="fake__checkbox"></div>
+  <label [for]="filterItem.strCategory" (click)="toggleCheckbox(input)">{{
+    filterItem.strCategory
+  }}</label>
+</li>

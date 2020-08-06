@@ -1,0 +1,9 @@
+<div class="wrapper">
+  <div *ngIf="!loading">
+    <ul class="filter__items">
+      <app-filter-item *ngFor="let filter of filtersList" [filterItem]="filter"></app-filter-item>
+    </ul>
+    <button type="button" class="bth bth__apply__filter" (click)="filterApply()">Apply</button>
+  </div>
+  <div class="loading" *ngIf="loading">Filters is loading</div>
+</div>
